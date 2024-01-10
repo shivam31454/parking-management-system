@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parking Management System</h1>
+      <div class="vehicle-buttons">
+        <div class="vehicle-button">
+          <button onclick="decrementVehicle('bike')">-</button>
+          <span id="bike-count">0</span>
+          <button onclick="incrementVehicle('bike')">+</button>
+          <label for="bike">Bikes</label>
+        </div>
+        <div class="vehicle-button">
+          <button onclick="decrementVehicle('car')">-</button>
+          <span id="car-count">0</span>
+          <button onclick="incrementVehicle('car')">+</button>
+          <label for="car">Cars</label>
+        </div>
+        <div class="vehicle-button">
+          <button onclick="decrementVehicle('truck')">-</button>
+          <span id="truck-count">0</span>
+          <button onclick="incrementVehicle('truck')">+</button>
+          <label for="truck">Trucks</label>
+        </div>
+        <div class="vehicle-button">
+          <button onclick="decrementVehicle('other')">-</button>
+          <span id="other-count">0</span>
+          <button onclick="incrementVehicle('other')">+</button>
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="action-buttons">
+        <button onclick="resetCount()">Reset All</button>
+        <button onclick="calculateCharge()">Calculate</button>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
